@@ -3,17 +3,102 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
-    <link rel="stylesheet" href="screen.css">
+    <title>InstaDarren</title>
+    <style>
+      body {
+        background-color: #333;
+        color: white;
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+      h1 {
+        margin-bottom: 20px;
+      }
+      .images {
+        width: 500px;
+        height: 500px;
+        background-color: #667;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px 0;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+      .images img {
+        width: 500px;
+        height: 500px;
+        object-fit: cover;
+      }
+    </style>
+    <script src="https://unpkg.com/scrollreveal"></script>
   </head>
   <body>
-    <h1>Home</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="about.html">About</a></li>
-      </ul>
-    </nav>
-    <script src="index.js"></script>
+    <div class="site">
+      <h1>InstaDarren</h1>
+      <div class="images image1">
+        <img src="IMG_0679.JPG">
+      </div>
+      <div class="images image2">
+        <img src="IMG_2147.JPG">
+      </div>
+      <div class="images image3">
+        <img src="IMG_3148.JPG">
+      </div>
+      <div class="images image4">
+        <img src="IMG_3151.JPG">
+      </div>
+      <div class="images image5">
+        <img src="IMG_3256.JPG">
+      </div>
+    </div>
+    <script>
+      ScrollReveal().reveal('.image1', {
+        duration: 1000,
+        origin: 'left',
+        distance: '100px',
+        reset: true
+      });
+
+      ScrollReveal().reveal('.image2', {
+        duration: 1000,
+        origin: 'left',
+        distance: '120px',
+        scale: 0.9,
+        reset: true
+      });
+
+      ScrollReveal().reveal('.image3', {
+        duration: 1000,
+        origin: 'left',
+        distance: '150px',
+        reset: true
+      });
+
+      ScrollReveal().reveal('.image4', {
+        duration: 1000,
+        origin: 'left',
+        distance: '100px',
+        opacity: 0,
+        reset: true
+      });
+
+      ScrollReveal().reveal('.image5', {
+        duration: 1000,
+        origin: 'left',
+        distance: '200px',
+        delay: 100,
+        reset: true
+      });
+    </script>
   </body>
 </html>
